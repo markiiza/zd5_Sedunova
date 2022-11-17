@@ -1,46 +1,41 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
     xmlns:tools="http://schemas.android.com/tools"
     android:orientation="vertical"
-    android:layout_margin="16dp">
-
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="16dp"
+    >
     <TextView
-        android:id="@+id/textView"
         style="?android:listSeparatorTextViewStyle"
-        android:layout_width="380dp"
-        android:layout_height="40dp"
-        android:text="@string/title" />
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text= "@string/crime_title_label"
+        ></TextView>
 
     <EditText
         android:id="@+id/crime_title"
-        android:layout_width="383dp"
-        android:layout_height="43dp"
-        android:layout_marginTop="16dp"
-        android:hint="@string/crime" />
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/crime_title_hint"
+        ></EditText>
 
     <TextView
-        android:id="@+id/textView2"
         style="?android:listSeparatorTextViewStyle"
-        android:layout_width="380dp"
-        android:layout_height="42dp"
-        android:text="@string/details" />
-
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/crime_details_label"
+        ></TextView>
     <Button
         android:id="@+id/crime_date"
-        android:layout_width="278dp"
-        android:layout_height="51dp"
-        android:onClick="clicked"
-
-        android:backgroundTint="@color/gray"
-        android:text="@string/text"
-        tools:ignore="OnClick" />
-
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:text="Web Nov 14 11:56 EST 2018"
+        ></Button>
     <CheckBox
         android:id="@+id/crime_solved"
-        android:layout_width="249dp"
-        android:layout_height="46dp"
-        android:text="@string/solved" />
-
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/crime_solved_label"
+        ></CheckBox>
 </LinearLayout>
